@@ -134,13 +134,13 @@ sudo ./network.sh createChannel
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 
 ```
-![账本已存在](/Fabric/image.png)
+![账本已存在](/imgs/Fabric/image.png)
 解决办法：./network.sh down
-![Error: failed to normalize chaincode path: failed to determine module root: exec: “go“](/Fabric/image1.png)
+![Error: failed to normalize chaincode path: failed to determine module root: exec: “go“](/imgs/Fabric/image1.png)
 解决办法：sudo chmod -R 777 ~/go
 之后去掉sudo 执行 代码：./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go 
 [参考方案](https://blog.csdn.net/lakersssss24/article/details/119539472)
-![Error: chaincode install failed with status: 500 - failed to invoke backing](/Fabric/image2.png)
+![Error: chaincode install failed with status: 500 - failed to invoke backing](/imgs/Fabric/image2.png)
 解决办法：
 ```
 cd fabric-samples/asset-transfer-basic/chaincode-go
